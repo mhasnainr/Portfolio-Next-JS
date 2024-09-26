@@ -1,0 +1,194 @@
+<!-------------------------------------- first code: navbar -------------------------------------->
+
+    <nav class="flex items-center justify-between p-4">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo" class="w-24">
+        </div>
+
+        <!-- Menu for larger screens -->
+        <div class="hidden md:flex items-center space-x-6">
+            <button class="px-4 py-2 text-white bg-black rounded">Log In</button>
+            <button class="px-4 py-2 text-white bg-black rounded">Sign Up</button>
+            <select class="px-4 py-2 border rounded">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+
+        <!-- Hamburger Menu for mobile screens -->
+        <div class="md:hidden flex items-center">
+            <button id="hamburger" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+<!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div class="flex flex-col items-center space-y-4 mt-4">
+            <button class="px-4 py-2 text-white bg-black rounded w-3/4">Log In</button>
+            <button class="px-4 py-2 text-white bg-black rounded w-3/4">Sign Up</button>
+            <select class="px-4 py-2 border rounded w-3/4">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+
+
+<!-------------------------------------- second code: navbar -------------------------------------->
+
+
+<nav class="flex items-center justify-between p-4">
+        <!-- Hamburger Menu and Language Select (Mobile Only) -->
+        <div class="flex items-center space-x-4 md:hidden">
+            <!-- Hamburger Icon -->
+            <button id="hamburger" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Language Select (Mobile Only) -->
+            <select class="border rounded px-3 py-1">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+
+        <!-- Logo in Center (Mobile) -->
+        <div class="md:hidden absolute left-1/2 transform -translate-x-1/2">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo" class="w-24">
+        </div>
+
+        <!-- Logo (Desktop) -->
+        <div class="hidden md:block">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo" class="w-24">
+        </div>
+
+        <!-- Menu for larger screens -->
+        <div class="hidden md:flex items-center space-x-6">
+            <button class="px-4 py-2 text-white bg-black rounded">Log In</button>
+            <button class="px-4 py-2 text-white bg-black rounded">Sign Up</button>
+            <select class="border rounded px-3 py-1">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden Initially) -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <div class="flex flex-col items-center space-y-4 mt-4">
+            <button class="px-4 py-2 text-white bg-black rounded w-3/4">Log In</button>
+            <button class="px-4 py-2 text-white bg-black rounded w-3/4">Sign Up</button>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+    <!-------------------------------------- third code: navbar + landscape + footer -------------------------------------->
+
+
+
+<!-- Navbar -->
+    <nav class="flex items-center justify-between p-4">
+        <!-- Hamburger and Logo for Mobile -->
+        <div class="flex items-center md:hidden">
+            <button id="hamburger" class="mr-4 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo"
+                class="w-24 mx-auto">
+            <select class="px-4 py-2 border rounded md:hidden">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+
+        <!-- Logo for larger screens -->
+        <div class="hidden md:block">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo" class="w-24">
+        </div>
+
+        <!-- Menu Items for Larger Screens -->
+        <div class="hidden md:flex items-center space-x-6">
+            <button class="px-4 py-2 text-white bg-black rounded hover:bg-gray-700">Log In</button>
+            <button class="px-4 py-2 text-white bg-black rounded hover:bg-gray-700">Sign Up</button>
+            <select class="px-4 py-2 border rounded hover:bg-gray-100">
+                <option value="en">English</option>
+                <option value="ur">Urdu</option>
+            </select>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-50">
+            <div class="flex flex-col items-center space-y-4 mt-4">
+                <button class="px-4 py-2 text-white bg-black rounded w-3/4 hover:bg-gray-700">Log In</button>
+                <button class="px-4 py-2 text-white bg-black rounded w-3/4 hover:bg-gray-700">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landscape Section with Search Bar -->
+    <section class="h-screen bg-cover bg-center" style="background-image: url('landscape.jpg');">
+        <div class="flex flex-col items-center justify-center h-full text-white bg-black bg-opacity-50">
+            <h2 class="text-4xl font-bold mb-4">Find Your Next Destination</h2>
+            <div class="flex">
+                <input type="text" class="px-4 py-2 rounded-l bg-white text-black" placeholder="Enter location">
+                <button class="px-4 py-2 bg-black text-white rounded-r hover:bg-gray-700">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4">
+        <div class="flex items-center justify-center">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo 1" class="w-24 mr-4 hover:opacity-75">
+            <hr class="w-0 h-8 border border-white">
+            <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Logo 2" class="w-24 ml-4 hover:opacity-75">
+        </div>
+        <div class="mt-4 text-center">
+            <a href="https://facebook.com" class="mx-2 hover:text-blue-500"><img src="facebook_icon.png" alt="" class="w-24 mr-4 hover:opacity-75"></a>
+            <a href="https://instagram.com" class="mx-2 hover:text-pink-500">Instagram</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>

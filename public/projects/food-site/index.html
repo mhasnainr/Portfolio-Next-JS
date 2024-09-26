@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Panda - Site</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+
+    <body class="font-sans antialiased">
+
+        <!-- Navbar -->
+        <nav class="flex items-center justify-between p-4 shadow-md">
+            <!-- Logo -->
+            <div>
+                <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Company Logo"
+                    class="w-24">
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex items-center space-x-6 bg-slate-200">
+                <button class="px-4 py-2 text-white bg-pink-600 rounded hover:bg-pink-500">Log In</button>
+                <button class="px-4 py-2 text-white bg-pink-600 rounded hover:bg-pink-500">Sign Up</button>
+                <select class="px-4 py-2 border rounded hover:bg-gray-100">
+                    <option value="en">English</option>
+                    <option value="ur">Urdu</option>
+                </select>
+            </div>
+        </nav>
+
+        <!-- Search Section -->
+        <section class="h-screen bg-cover bg-center relative"
+            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nJqTnOdPPqj_wwgKWb_ntIlg3u4GbHW_Iw&s');">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                <div class="text-center text-white">
+                    <h2 class="text-4xl font-bold mb-6 ">You love food and groceries, get them delivered</h2>
+                    <div class="flex items-center justify-center">
+                        <input type="text" placeholder="Enter your location"
+                            class="px-6 py-3 rounded-l-full w-64 text-black focus:outline-none">
+                        <button
+                            class="px-6 py-3 bg-pink-600 text-white rounded-r-full hover:bg-pink-500 transition duration-300">Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Get Started -->
+        <section class="py-16">
+            <!-- Heading -->
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold text-pink-600">Just Prepare your food</h2>
+            </div>
+
+            <!-- Image with Get Started Button -->
+            <div class="relative h-96 bg-cover bg-center"
+                style="background-image: url('https://assets.atdw-online.com.au/images/5cd8d2bff9ad7c2ff4a4c1f172541131.jpeg?rect=0%2C131%2C2500%2C1406&w=1600&h=900&rot=360&q=eyJ0eXBlIjoibGlzdGluZyIsImxpc3RpbmdJZCI6IjU2ZmRmYjBhYTRhMDI5NzY2ZTYzNzZmNCIsImRpc3RyaWJ1dG9ySWQiOiI1NmIxZjM5MjQ0ZmVjYTNkZjJlNDhjNmMiLCJhcGlrZXlJZCI6IjY1MGNkMzRjOTkzNDRjMzcwNmQzMDU0YiJ9');">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
+                    <p class="text-2xl mb-6">Join us today and get started on your food delivery adventure!</p>
+                    <button class="px-6 py-3 bg-pink-600 text-white rounded hover:bg-pink-500 transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content - Cities Section -->
+        <section class="py-16">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold">Cities We Serve</h2>
+                <p class="mt-2 text-lg text-gray-500">Explore our services in your favorite cities</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- City 1 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRctkHFQcyASevUtLZYuQc6eRL0ERxJTWMpWw&s" alt="City 1" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-xl font-bold">Karachi</h3>
+                    </div>
+                </div>
+
+                <!-- City 2 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://media.istockphoto.com/id/1167505769/photo/minar-e-pakistan-symbol-of-pakistan.jpg?s=612x612&w=0&k=20&c=PfCyM-w34h9Exm7hUK1c78-vdOIzNT2JpjsJ7muDRdA=" alt="City 2" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-xl font-bold">Lahore</h3>
+                    </div>
+                </div>
+
+                <!-- City 3 -->
+                <div class="relative group overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://media.istockphoto.com/id/1372621727/photo/faisal-mosque.jpg?s=612x612&w=0&k=20&c=IIRrKM_Drv_kmdnLtbrR3n0aq9Bj3MDMJxehe2bPTbE=" alt="City 3" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <h3 class="text-white text-xl font-bold">Islamabad</h3>
+                    </div>
+                </div>
+
+                <!-- Add more cities similarly -->
+            </div>
+        </section>
+
+        <!-- Partnership Section -->
+        <section class="bg-gray-100 py-16">
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold">Let's take the office to lunch!</h2>
+                <p class="mt-2 text-2xl text-gray-500">Foodpanda for business</p>
+            </div>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-lg text-gray-600">If you own a restaurant or food business and want to partner with us to
+                    reach more customers, we would love to work with you. Expand your business by joining our platform
+                    and offering your services to millions of customers nationwide.</p>
+                <button class="mt-6 px-6 py-2 text-white bg-pink-600 rounded hover:bg-pink-500">Join Now</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-6">
+            <div class="flex flex-col items-center space-y-4">
+                <!-- Company Logo -->
+                <img src="https://logos-world.net/wp-content/uploads/2023/03/FoodPanda-Logo.png" alt="Company Logo"
+                    class="w-24 hover:opacity-75 transition duration-300">
+
+                <!-- Social Media Links -->
+                <div class="flex space-x-6">
+                    <a href="https://facebook.com" class="hover:text-blue-500 transition duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook" class="w-8">
+                    </a>
+
+                    
+                    <a href="https://instagram.com" class="hover:text-pink-500 transition duration-300">
+                        <img src="https://www.transparentpng.com/thumb/logo-instagram/Sj4fEy-instagram-png-logo-high-quality.png" alt="Instagram" class="w-10">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
