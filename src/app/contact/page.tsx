@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { span } from "framer-motion/client";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
@@ -31,7 +30,7 @@ const ContactPage = () => {
           setSuccess(true);
           form.current.reset();
         },
-        (error) => {
+        () => {
           setError(true);
         }
       );

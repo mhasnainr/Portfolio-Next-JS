@@ -1,8 +1,6 @@
 "use client";
 
-import { link } from "fs";
 import Link from "next/link";
-import { title } from "process";
 import { useState } from "react";
 import Image from "next/image";
 import NavLink from "./navLinks";

@@ -34,7 +34,7 @@ const HomePage = () => {
             creativity and technology to solve real-world challenges. With a
             focus on building intelligent, future-forward solutions, I’m
             constantly exploring new tools and techniques to push the boundaries
-            of what's possible in software development and AI.
+            of what is possible in software development and AI.
           </p>
           {/* Buttons */}
           <div className="w-full flex gap-4">

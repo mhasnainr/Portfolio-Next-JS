@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
             </p>
             {/* Biography Quote */}
             <span className="italic">
-              "First do hardwork, then rely on luck"
+              First do hardwork, then rely on luck
             </span>
           </div>
 
