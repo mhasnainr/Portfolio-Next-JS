@@ -5,12 +5,13 @@ import { useRef } from "react";
 import Image from "next/image";
 
 const AboutPage = () => {
-  const containerRef = useRef();
+  // Define that this ref will point to an HTMLDivElement
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const skillRef = useRef();
+  const skillRef = useRef<HTMLDivElement>(null);
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
-  const experienceRef = useRef();
+  const experienceRef = useRef<HTMLDivElement>(null);
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
@@ -40,7 +41,7 @@ const AboutPage = () => {
             </p>
             {/* Biography Quote */}
             <span className="italic">
-              First do hardwork, then rely on luck
+              First do hard work, then rely on luck
             </span>
           </div>
 
@@ -90,10 +91,6 @@ const AboutPage = () => {
                   height={60}
                 />
               </div>
-
-              {/* <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                JavaScript
-              </div> */}
             </motion.div>
           </div>
 
@@ -152,7 +149,7 @@ const AboutPage = () => {
                 <div className="w-1/3 "></div>
               </div>
 
-              {/* Experience List Items */}
+              {/* Second Experience List Items */}
               <div className="flex justify-between h-48">
                 {/* Left */}
                 <div className="w-1/3 "></div>
@@ -186,49 +183,6 @@ const AboutPage = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Experience List Items */}
-
-              {/* <div className="flex justify-between h-48"> */}
-
-              {/* Left */}
-              {/* <div className="w-1/3 "> */}
-
-              {/* Job Title */}
-              {/* <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Generative AI Intern — Remote
-                  </div> */}
-
-              {/* Job Desc */}
-              {/* <div className="p-3 text-sm italic">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </div> */}
-
-              {/* Job Date */}
-              {/* <div className="p-3 text-blue-400 text-sm font-semibold">
-                    July 2024 - Sept 2024
-                  </div> */}
-
-              {/* Company Name */}
-              {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    ITSolera
-                  </div> */}
-              {/* </div> */}
-
-              {/* Center */}
-              {/* <div className="w-1/6 "> */}
-
-              {/* Line */}
-              {/* <div className="w-1 h-full bg-gray-600 rounded relative"> */}
-
-              {/* Line Circle */}
-              {/* <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-400 bg-white -left-2"></div> */}
-              {/* </div> */}
-              {/* </div> */}
-
-              {/* Right */}
-              {/* <div className="w-1/3 "></div> */}
-              {/* </div> */}
             </motion.div>
           </div>
         </div>
