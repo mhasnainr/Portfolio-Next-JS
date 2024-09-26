@@ -3,9 +3,16 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./navbar";
 import { usePathname } from "next/navigation";
+import { ReactNode } from "react";
 
-const TransitionProvider = ({ children }) => {
+// Define the type for the children prop
+interface TransitionProviderProps {
+  children: ReactNode;
+}
+
+const TransitionProvider = ({ children }: TransitionProviderProps) => {
   const pathName = usePathname();
+  
   return (
     <AnimatePresence mode="wait">
       <div
@@ -18,7 +25,6 @@ const TransitionProvider = ({ children }) => {
          from-white to-gray-200
         - from-indigo-500 to-purple-700
         from-teal-400 to-green-700
-        
         */}
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"

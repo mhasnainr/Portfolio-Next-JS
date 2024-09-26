@@ -6,7 +6,8 @@ import { useRef } from "react";
 import Image from "next/image";
 
 const ServicesPage = () => {
-  const ref = useRef();
+  // Specify the type as HTMLDivElement
+  const ref = useRef<HTMLDivElement | null>(null);
 
   const { scrollYProgress } = useScroll({ target: ref });
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"]);
@@ -65,16 +66,6 @@ const ServicesPage = () => {
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]  ">
                     <Image src={item.img} alt={""} layout="fill" />
                   </div>
-
-                  {/* <Link
-                    href={item.link}
-                    target="blank"
-                    className="flex justify-end"
-                  >
-                    <button className="m-4 p-2 md:p-4 lg:p-8 text-sm md:text-md lg:text-lg bg-black text-red-200  hover:bg-red-200 hover:text-black  font-semibold rounded">
-                      See Demo
-                    </button>
-                  </Link> */}
                 </div>
               </div>
             ))}

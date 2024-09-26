@@ -3,12 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavLink = ({ link }) => {
+// Define the type for the link prop
+interface LinkProps {
+  link: {
+    url: string;
+    title: string;
+  };
+}
+
+const NavLink = ({ link }: LinkProps) => {
   const pathName = usePathname();
+
   return (
     <Link
       className={`rounded p-1 ${
-        pathName === link.url && "bg-black text-white"
+        pathName === link.url ? "bg-black text-white" : ""
       }`}
       href={link.url}
     >
