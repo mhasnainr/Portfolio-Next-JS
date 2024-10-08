@@ -17,31 +17,43 @@ const PortfolioPage = () => {
       id: 1,
       title: "Food App",
       img: "/food.png",
-      link: "/projects/food-site/index.html",
+      link: "https://food-app-hr.vercel.app/",
     },
     {
       id: 2,
       title: "Chat App",
       img: "/chat.jpg",
-      link: "/projects/chat-app/index.html",
+      link: "https://chat-app-hr.vercel.app/",
     },
     {
       id: 3,
       title: "Event Planner",
       img: "/event-planner.jpg",
-      link: "/projects/event-planner-site/index.html",
+      link: "https://event-planner-hr.vercel.app/",
     },
     {
       id: 4,
       title: "Calculator",
       img: "/calculator.jpg",
-      link: "/projects/Calculator/index.html",
+      link: "https://calculator-hr.vercel.app/",
     },
     {
       id: 5,
+      title: "Analog Clock",
+      img: "/analog-clock.png",
+      link: "https://analog-clock-hr.vercel.app/",
+    },
+    {
+      id: 6,
+      title: "Email Validator",
+      img: "/email-app.png",
+      link: "https://email-validator-hr.vercel.app/",
+    },
+    {
+      id: 7,
       title: "Stopwatch",
       img: "/stopwatch.jpg",
-      link: "/projects/Stopwatch/index.html",
+      link: "https://stopwatch-hr.vercel.app/",
     },
   ];
 
