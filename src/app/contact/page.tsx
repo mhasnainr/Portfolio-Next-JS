@@ -44,9 +44,9 @@ const ContactPage = () => {
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="h-full flex flex-col lg:flex-row p-24 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+      <div className="min-h-screen flex flex-col lg:flex-row p-8 sm:p-12 lg:p-20 xl:p-32">
         {/* Text container */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 flex items-center justify-center text-6xl">
+        <div className="lg:w-1/2 flex items-center justify-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
@@ -64,28 +64,33 @@ const ContactPage = () => {
             ))}
           </div>
         </div>
-        {/* Form Container */}
+
+        {/* Form container */}
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24 my-20"
+          className="lg:w-1/2 bg-red-50 rounded-xl text-lg sm:text-xl flex flex-col gap-6 p-8 sm:p-12 lg:p-16 xl:p-24 justify-center my-10"
         >
           <span>Dear Hasnain Rizvi,</span>
           <textarea
-            rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+            rows={5}
+            className="bg-transparent border-b-2 border-black outline-none resize-none"
             name="user_message"
+            placeholder="Your message..."
           />
           <span>Email Address:</span>
           <input
             name="user_email"
-            type="text"
-            className="bg-transparent border-b-2 border-b-black outline-none"
+            type="email"
+            className="bg-transparent border-b-2 border-black outline-none"
+            placeholder="example@email.com"
           />
           <span>Regards</span>
-          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
+          <br />
+          <button className="bg-purple-200 rounded font-semibold text-gray-600 p-3 hover:bg-purple-300 transition-colors">
             Send
           </button>
+
           {success && (
             <span className="text-green-600">
               Your message has been sent successfully!

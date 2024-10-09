@@ -15,46 +15,52 @@ const PortfolioPage = () => {
   const items = [
     {
       id: 1,
-      title: "Food App",
-      img: "/food.png",
-      link: "https://food-app-hr.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "Chat App",
-      img: "/chat.jpg",
-      link: "https://chat-app-hr.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Event Planner",
-      img: "/event-planner.jpg",
-      link: "https://event-planner-hr.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "Calculator",
-      img: "/calculator.jpg",
-      link: "https://calculator-hr.vercel.app/",
-    },
-    {
-      id: 5,
-      title: "Analog Clock",
-      img: "/analog-clock.png",
-      link: "https://analog-clock-hr.vercel.app/",
-    },
-    {
-      id: 6,
       title: "Email Validator",
       img: "/email-app.png",
       link: "https://email-validator-hr.vercel.app/",
     },
     {
-      id: 7,
-      title: "Stopwatch",
-      img: "/stopwatch.jpg",
-      link: "https://stopwatch-hr.vercel.app/",
+      id: 2,
+      title: "Analog Clock",
+      img: "/analog-clock.png",
+      link: "https://analog-clock-hr.vercel.app/",
     },
+    {
+      id: 3,
+      title: "Traffic Signal",
+      img: "/traffic.png",
+      link: "https://traffic-signal-hr.vercel.app/",
+    },
+    {
+      id: 4,
+      title: "Food App",
+      img: "/food.png",
+      link: "https://food-app-hr.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Calculator",
+      img: "/calculator.jpg",
+      link: "https://calculator-hr.vercel.app/",
+    },
+    // {
+    //   id: 5,
+    //   title: "Chat App",
+    //   img: "/chat.jpg",
+    //   link: "https://chat-app-hr.vercel.app/",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Event Planner",
+    //   img: "/event-planner.jpg",
+    //   link: "https://event-planner-hr.vercel.app/",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Stopwatch",
+    //   img: "/stopwatch.jpg",
+    //   link: "https://stopwatch-hr.vercel.app/",
+    // },
   ];
 
   return (
