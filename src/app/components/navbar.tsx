@@ -71,15 +71,16 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
-      {/* Links */}
+    <div className="h-16 sm:h-20 flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 text-xl">
+      {/* Links (Hidden on small devices, visible on medium and above) */}
       <div className="hidden md:flex gap-4 w-1/3">
         {links.map((link) => (
           <NavLink link={link} key={link.title} />
         ))}
       </div>
-      {/* Logo */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+
+      {/* Logo (Visible on all devices, adjusted for screen sizes) */}
+      <div className="flex md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link
           href="/"
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
@@ -91,8 +92,8 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Social Links */}
-      <div className="hidden md:flex gap-4 w-1/3">
+      {/* Social Links (Hidden on small devices, visible on medium and above) */}
+      <div className="hidden md:flex gap-4 w-1/3 justify-end">
         <Link href="https://github.com/mhasnainr">
           <Image src={"/github.png"} alt={"github"} width={24} height={24} />
         </Link>
@@ -112,10 +113,8 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        {/* <Link href="">
-          <Image src={"/.png"} alt={""} width={24} height={24} />
-        </Link> */}
       </div>
+
       {/* Responsive Menu */}
       <div className="md:hidden">
         {/* Menu Button */}
