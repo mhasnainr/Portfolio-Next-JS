@@ -12,24 +12,18 @@ interface TransitionProviderProps {
 
 const TransitionProvider = ({ children }: TransitionProviderProps) => {
   const pathName = usePathname();
-  
+
   return (
     <AnimatePresence mode="wait">
       <div
         key={pathName}
         className="w-full min-h-screen bg-gradient-to-b from-blue-100 to-red-100"
       >
-        {/* color sets:
-         from-blue-100 to-red-100
-        -from-cyan-200 to-blue-700
-         from-white to-gray-200
-        - from-indigo-500 to-purple-700
-        from-teal-400 to-green-700
-        */}
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-b-[100px] z-40"
+          className="h-screen w-screen fixed bg-black"
+          initial={{ height: "0vh" }}
           animate={{ height: "0vh" }}
-          exit={{ height: "140vh" }}
+          exit={{ height: "0vh" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         />
 
@@ -43,8 +37,8 @@ const TransitionProvider = ({ children }: TransitionProviderProps) => {
         </motion.div>
 
         <motion.div
-          className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-30"
-          initial={{ height: "140vh" }}
+          className="h-screen w-screen fixed bg-black bottom-0 "
+          initial={{ height: "100vh" }}
           animate={{ height: "0vh", transition: { delay: 0.5 } }}
         />
 
