@@ -97,7 +97,7 @@ const Navbar = () => {
         <Link href="https://github.com/mhasnainr">
           <Image src={"/github.png"} alt={"github"} width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/hasnainr">
+        <Link href="https://www.linkedin.com/in/mhasnainr">
           <Image
             src={"/linkedin.png"}
             alt={"linkedin"}

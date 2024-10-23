@@ -49,18 +49,6 @@ const PortfolioPage = () => {
     //   img: "/chat.jpg",
     //   link: "https://chat-app-hr.vercel.app/",
     // },
-    // {
-    //   id: 6,
-    //   title: "Event Planner",
-    //   img: "/event-planner.jpg",
-    //   link: "https://event-planner-hr.vercel.app/",
-    // },
-    // {
-    //   id: 7,
-    //   title: "Stopwatch",
-    //   img: "/stopwatch.jpg",
-    //   link: "https://stopwatch-hr.vercel.app/",
-    // },
   ];
 
   return (

@@ -150,39 +150,34 @@ const AboutPage = () => {
               </div>
 
               {/* Second Experience List Items */}
-              <div className="flex justify-between h-48">
+              {/* <div className="flex justify-between h-48"> */}
                 {/* Left */}
-                <div className="w-1/3 "></div>
+                {/* <div className="w-1/3 "></div> */}
                 {/* Center */}
-                <div className="w-1/6 ">
+                {/* <div className="w-1/6 "> */}
                   {/* Line */}
-                  <div className="w-1 h-full bg-gray-600 rounded relative">
+                  {/* <div className="w-1 h-full bg-gray-600 rounded relative"> */}
                     {/* Line Circle */}
-                    <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-400 bg-white -left-2"></div>
-                  </div>
-                </div>
+                    {/* <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-400 bg-white -left-2"></div> */}
+                  {/* </div> */}
+                {/* </div> */}
                 {/* Right */}
-                <div className="w-1/3 ">
+                {/* <div className="w-1/3 "> */}
                   {/* Job Title */}
-                  <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Generative AI Intern — Remote
-                  </div>
+                  {/* <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
+                  </div> */}
                   {/* Job Desc */}
-                  <div className="p-3 text-sm">
-                    ❖ Trend Analysis for a Virtual Fashion Stylist who aims to
-                    design an AI that suggests clothing and accessory
-                    combinations
-                  </div>
+                  {/* <div className="p-3 text-sm">
+                    ❖ 
+                  </div> */}
                   {/* Job Date */}
-                  <div className="p-3 text-blue-400 text-sm font-semibold">
-                    July 2024 - Sept 2024
-                  </div>
+                  {/* <div className="p-3 text-blue-400 text-sm font-semibold">
+                  </div> */}
                   {/* Company Name */}
-                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    ITSolera
-                  </div>
-                </div>
-              </div>
+                  {/* <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                  </div> */}
+                {/* </div> */}
+              {/* </div> */}
             </motion.div>
           </div>
         </div>
