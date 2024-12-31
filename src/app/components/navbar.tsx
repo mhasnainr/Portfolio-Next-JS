@@ -94,10 +94,10 @@ const Navbar = () => {
 
       {/* Social Links (Hidden on small devices, visible on medium and above) */}
       <div className="hidden md:flex gap-4 w-1/3 justify-end">
-        <Link href="https://github.com/mhasnainr">
+        <Link href="https://github.com/mhasnainr" target="blank">
           <Image src={"/github.png"} alt={"github"} width={24} height={24} />
         </Link>
-        <Link href="https://www.linkedin.com/in/mhasnainr">
+        <Link href="https://www.linkedin.com/in/mhasnainr" target="blank">
           <Image
             src={"/linkedin.png"}
             alt={"linkedin"}
@@ -105,10 +105,18 @@ const Navbar = () => {
             height={24}
           />
         </Link>
-        <Link href="https://x.com/mhasnainr">
+        <Link href="https://x.com/mhasnainr" target="blank">
           <Image
             src={"/x_twitter.png"}
             alt={"x_twitter"}
+            width={24}
+            height={24}
+          />
+        </Link>
+        <Link href="https://www.youtube.com/@mhasnainr" target="blank">
+          <Image
+            src={"/youtube.png"}
+            alt={"youtube"}
             width={24}
             height={24}
           />

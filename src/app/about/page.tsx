@@ -77,20 +77,20 @@ const AboutPage = () => {
                   height={60}
                 />
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer ">
+              {/* <div className="rounded p-2 text-sm cursor-pointer ">
                 <Image src={"/ts.png"} alt={"ts"} width={60} height={60} />
-              </div>
+              </div> */}
               <div className="rounded p-2 text-sm cursor-pointer ">
                 <Image src={"/js.png"} alt={"js"} width={60} height={60} />
               </div>
-              <div className="rounded p-2 text-sm cursor-pointer ">
+              {/* <div className="rounded p-2 text-sm cursor-pointer ">
                 <Image
                   src={"/next-js.png"}
                   alt={"next-js"}
                   width={60}
                   height={60}
                 />
-              </div>
+              </div> */}
             </motion.div>
           </div>
 
